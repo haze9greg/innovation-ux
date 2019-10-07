@@ -1,0 +1,39 @@
+///////////////// Buttons
+.btn {
+   border-radius: 14px;
+   font-weight: bold;
+   padding: 0.375rem 1.5rem;
+}
+
+.btn-primary {
+   background: $teal;
+   border: $teal;
+
+   &:hover,
+   &:active {
+      background: darken($teal, 5%);
+      border: darken($teal, 5%);
+      transition: 200ms;
+   }
+
+   &:focus {
+      background: darken($teal, 10%) !important;
+   }
+}
+
+
+///////////////// Details/Summary
+details {
+   border: 1px solid grey;
+   margin: 6px 0px;
+   background: white;
+
+   div {
+      padding: 20px;
+   }
+
+   summary {
+      font-weight: bold;
+      padding: 10px 20px;
+   }
+}
